@@ -1,0 +1,15 @@
+# The dsh-ui-font-extension bundle layer: one Host plugin row.
+#
+# The plugin reads the fonts kept in the configured directories (by default
+# `~/.dsh/fonts`), serves them from the Harness web server, and injects the
+# matching @font-face rules into every served page. It ships no font bytes:
+# storage stays on the machine that runs the Harness.
+#
+# Optional config (all fields optional):
+#   dirs:            array of absolute or `~`-prefixed directories
+#   routePath:       URL prefix serving the files (default `/dsh-fonts`)
+#   fontDisplay:     CSS font-display value (default `swap`)
+#   maxFileBytes:    per-file ceiling (default 67108864)
+- insert:
+    - id: ui-font-extension
+      name: dsh-ui-font-extension

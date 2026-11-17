@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Local font files",
+    "description": "Serves the fonts kept in a local folder to every browser that opens DeepSeek Harness and injects their @font-face rules, so typography stays identical across hosts."
+  }
+}
